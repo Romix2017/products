@@ -1,0 +1,72 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+        <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+        <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="src\app\+products\products-routing.module.ts" />
+      <None Remove="src\app\+products\products.component.ts" />
+      <None Remove="src\app\+products\products.module.ts" />
+      <None Remove="src\app\+products\search-bar\search-bar.component.ts" />
+      <None Remove="src\app\+products\show-products-panel\show-products-panel.component.ts" />
+      <None Remove="src\app\app-routing.module.ts" />
+      <None Remove="src\app\core\core-module.ts" />
+      <None Remove="src\app\core\models\IProductFilterModel.ts" />
+      <None Remove="src\app\core\models\IProductModel.ts" />
+      <None Remove="src\app\core\models\ProductModel.ts" />
+      <None Remove="src\app\core\models\ServerResponseModel.ts" />
+      <None Remove="src\app\core\repository\Repository.ts" />
+      <None Remove="src\app\core\services\product.service.ts" />
+      <None Remove="src\app\core\services\products.service.ts" />
+      <None Remove="src\app\core\settings\settings.ts" />
+      <None Remove="src\app\core\store\app-state-reducers.ts" />
+      <None Remove="src\app\core\store\app-state.ts" />
+      <None Remove="src\app\core\store\BaseSelectors.ts" />
+      <None Remove="src\app\core\store\products-state\products-actions.ts" />
+      <None Remove="src\app\core\store\products-state\products-reducers.ts" />
+      <None Remove="src\app\core\store\products-state\products-state.ts" />
+      <None Remove="src\app\core\store\selectors\products-selectors.ts" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="wwwroot\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\BLL.Implementation\BLL.Implementation.csproj" />
+        <ProjectReference Include="..\DAL.EF\DAL.EF.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <TypeScriptCompile Include="src\app\+products\products-routing.module.ts" />
+      <TypeScriptCompile Include="src\app\+products\products.component.ts" />
+      <TypeScriptCompile Include="src\app\+products\products.module.ts" />
+      <TypeScriptCompile Include="src\app\+products\search-bar\search-bar.component.ts" />
+      <TypeScriptCompile Include="src\app\+products\show-products-panel\show-products-panel.component.ts" />
+      <TypeScriptCompile Include="src\app\app-routing.module.ts" />
+      <TypeScriptCompile Include="src\app\core\contracts\IProductFilterModel.ts" />
+      <TypeScriptCompile Include="src\app\core\contracts\IProductModel.ts" />
+      <TypeScriptCompile Include="src\app\core\core-module.ts" />
+      <TypeScriptCompile Include="src\app\core\models\ProductModel.ts" />
+      <TypeScriptCompile Include="src\app\core\models\ServerResponseModel.ts" />
+      <TypeScriptCompile Include="src\app\core\repository\Repository.ts" />
+      <TypeScriptCompile Include="src\app\core\services\product.service.ts" />
+      <TypeScriptCompile Include="src\app\core\services\products.service.ts" />
+      <TypeScriptCompile Include="src\app\core\settings\settings.ts" />
+      <TypeScriptCompile Include="src\app\core\store\app-state-reducers.ts" />
+      <TypeScriptCompile Include="src\app\core\store\app-state.ts" />
+      <TypeScriptCompile Include="src\app\core\store\BaseSelectors.ts" />
+      <TypeScriptCompile Include="src\app\core\store\products-state\products-actions.ts" />
+      <TypeScriptCompile Include="src\app\core\store\products-state\products-reducers.ts" />
+      <TypeScriptCompile Include="src\app\core\store\products-state\products-state.ts" />
+      <TypeScriptCompile Include="src\app\core\store\selectors\products-selectors.ts" />
+    </ItemGroup>
+
+</Project>

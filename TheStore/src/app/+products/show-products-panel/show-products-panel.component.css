@@ -1,0 +1,20 @@
+body {
+}
+
+.product-container {
+  position: relative;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+.product {
+  position: relative;
+  float: left;
+  height: 200px;
+  width: 230px;
+  background-color: lavenderblush;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 30px;
+}

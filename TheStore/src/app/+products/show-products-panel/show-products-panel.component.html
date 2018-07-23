@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-xs-12 col-md-12">
+    <div class="product-container">
+      <div class="product" *ngFor="let product of productsCollection$ | async">
+        <b>Name:</b> {{product.name}}<br />
+        <b>Price:</b> {{product.price}} $
+      </div>
+    </div>
+  </div>
+</div>
